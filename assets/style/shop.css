@@ -1,0 +1,378 @@
+.shop_header_picture {
+    background-image: url(../../img/shop.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop_header_picture span {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+}
+.wrapper_shop_card {
+    margin-bottom: 100px;
+}
+.wrapper_center_shop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.filter_shop {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+.shop_filter_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.shop_filter_list li {
+    list-style: none;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 1px solid #E8E8E8;
+    font-size: 16px;
+    border-radius: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.shop_filter_list li:hover {
+    outline: 0;
+    border: 1px solid #74b445;
+    color: #74b445;
+    cursor: pointer;
+}
+.shop_filter_list li.active {
+    list-style: none;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #74b445;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.input_search {
+    height: 50px;
+    width: 200px;
+    border-radius: 40px;
+    padding-left: 30px;
+    color: #C0C0C0;
+    font-size: 16px;
+    border: 2px solid #C0C0C0;
+}
+.input_search:focus {
+    outline: 0;
+    border-radius: 40px;
+    padding-left: 30px;
+    font-size: 16px;
+    border: 2px solid #e9e9e9;
+}
+.input_search:hover {
+    outline: 0;
+    border-radius: 40px;
+    padding-left: 30px;
+    font-size: 16px;
+    border: 2px solid #74b445;
+}
+.shop_card {
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    height: 100%;
+}
+.shop_card h3 {
+    color: #9D9D9D;
+    font-size: 20px;
+    font-weight: 800;
+}
+.shop_char_card {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.shop_char_card li {
+    display: flex;
+    flex-direction: column;
+}
+.shop_char_card li span:nth-child(1) {
+    font-size: 14px;
+    font-weight: 600;
+}
+.shop_char_card li span:nth-child(2) {
+    font-size: 12px;
+}
+.price_card_shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed black; 
+}
+.price_card_shop span {
+    font-size: 22px;
+    font-weight: 600;
+}
+.btn_shop {
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC327;
+    border-radius: 40px;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media (max-width: 1440px) {
+    .wrapper_shop_card {
+        margin-bottom: 100px;
+    }
+    .wrapper_center_shop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+@media (max-width: 1280px) {
+    .wrapper_shop_card {
+        margin-bottom: 100px;
+    }
+    .wrapper_center_shop {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .filter_shop {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 100px 0;
+    }
+    .left_filter_shop {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .right_filter_shop {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .input_search {
+        height: 50px;
+        width: 96%;
+        border-radius: 40px;
+        padding-left: 30px;
+        color: #C0C0C0;
+        font-size: 16px;
+        border: 2px solid #C0C0C0;
+    }
+}
+@media (max-width: 1024px) {
+    .shop_header_picture {
+        background-image: url(../../img/shop.png);
+        background-size: cover;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop_header_picture span {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+}
+@media (max-width: 768px) {
+    .shop_header_picture {
+        background-image: url(../../img/shop.png);
+        background-size: cover;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop_header_picture span {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .wrapper_shop_card {
+        margin-bottom: 100px;
+    }
+    .wrapper_center_shop {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .shop_card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .img_card_shop {
+        width: 100%;
+        height: 50%;
+    }
+    .picture_card_shop {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .shop_card h3 {
+        color: #9D9D9D;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .shop_char_card {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .shop_char_card li {
+        display: flex;
+        flex-direction: column;
+    }
+    .shop_char_card li span:nth-child(1) {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .shop_char_card li span:nth-child(2) {
+        font-size: 12px;
+    }
+    .price_card_shop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px dashed black; 
+    }
+    .price_card_shop span {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .btn_shop {
+        width: 150px;
+        height: 35px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFC327;
+        border-radius: 40px;
+        border: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .shop_filter_list {
+        overflow-x: overlay;
+        white-space: nowrap;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .shop_filter_list li {
+        list-style: none;
+        height: 50px;
+        min-width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        border: 1px solid #E8E8E8;
+        font-size: 16px;
+        border-radius: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .left_filter_shop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .shop_card {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 714px) {
+    .shop_header_picture span {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+}
+@media (max-width: 425px) {
+    .shop_header_picture {
+        background-image: url(../../img/shop.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop_header_picture span {
+        color: #fff;
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .input_search {
+        width: 90%;
+    }
+}
+@media (max-width: 320px) {
+    .shop_header_picture {
+        background-image: url(../../img/shop.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop_header_picture span {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+}

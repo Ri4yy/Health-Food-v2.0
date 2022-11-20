@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec606aa710.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <title>Корзина</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="header_contacts">
+            <p class="header_orders">Принимаем заказы 24 часа</p>
+            <button type="button" class="button_question">ОСТАЛИСЬ ВОПРОСЫ?</button>
+            <ul>
+                <li><a href="" class="header_icon"><i class="fab fa-vk"></i></a></li>
+                <li><a href="" class="header_icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" class="phone">8 (989) 999 99 99</a></li>
+            </ul>
+            <button type="button" class="button_call">Перезвоните мне</button>
+        </div>
+        <div class="header_nav">
+            <div class="header_wrapper_nav">
+                <a href="" class="logo">Logo</a>
+                <div class="menu_btn">
+                    <div class="menu-btn_burger"></div>
+                </div>
+                <ul class="header_list">
+                    <li><a href="">Меню</a></li>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="certificates.html">Сертификаты</a></li>
+                    <li><a href="discount.html">Акции</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                    <li><a href="price.html">Прайс лист</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="header_menu">
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                </ul>
+                <ul class="header_control">
+                    <li><a href=""><i class="far fa-user"></i><span class="constructor">Конструктор рациона</span></a>
+                    </li>
+                    <li><a href="profile.html"><i class="far fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart_header_picture">
+        <span>КОРЗИНА</span>
+    </div>
+
+    <div class="main_content">
+        <ul class="breadcrumbs">
+            <li><a href="../index.html">Главная</a></li>
+            <li>></li>
+            <li>Корзина</li>
+        </ul>
+
+        <!-- <div class="cart_empty">
+            <span>Ваша корзина пуста</span> 
+        </div> -->
+        <div class="wrapper_cart">
+            <div class="left_wrapper_cart">
+                <div class="item_cart">
+                    <div class="img_cart">
+                        <img src="../img/egg.png" alt="egg" class="cart_picture">
+                    </div>
+                    <div class="desc_cart">
+                        <div class="name_cart">
+                            Яичница
+                        </div>
+                        <div class="price_cart">
+                            <ul class="char_list">
+                                <li><span>Вес</span><span>N г.</span></li>
+                                <li><span>кКал</span><span>N г.</span></li>
+                                <li><span>Белки</span><span>N г.</span></li>
+                                <li><span>Жиры</span><span>N г.</span></li>
+                                <li><span>Углев</span><span>N г.</span></li>
+                            </ul>
+                            <div class="price_in_cart">
+                                <span id="112">112 руб.</span>
+                                <div class="sum_total">
+                                    <button type="button" class="btn_decrement cart_btn_count">-</button>
+                                    <input type="text" class="input_count" value="1" maxlength="2">
+                                    <button type="button" class="btn_increment cart_btn_count">+</button>
+									<div class="delete"><img src="../img/delete.png" alt="delete" class="delete_img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_cart">
+                    <div class="img_cart">
+                        <img src="../img/egg.png" alt="egg" class="cart_picture">
+                    </div>
+                    <div class="desc_cart">
+                        <div class="name_cart">
+                            Яичница
+                        </div>
+                        <div class="price_cart">
+                            <ul class="char_list">
+                                <li><span>Вес</span><span>N г.</span></li>
+                                <li><span>кКал</span><span>N г.</span></li>
+                                <li><span>Белки</span><span>N г.</span></li>
+                                <li><span>Жиры</span><span>N г.</span></li>
+                                <li><span>Углев</span><span>N г.</span></li>
+                            </ul>
+                            <div class="price_in_cart">
+                                <span id="246">246 руб.</span>
+                                <div class="sum_total">
+                                    <button type="button" class="btn_decrement cart_btn_count">-</button>
+                                    <input type="text" class="input_count" value="1" maxlength="2">
+                                    <button type="button" class="btn_increment cart_btn_count">+</button>
+									<div class="delete"><img src="../img/delete.png" alt="delete" class="delete_img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_price_cart">
+                <span>Рассчёт заказа</span>
+                <div class="total">
+                    <span>Итого</span>
+                    <span class="enter_price">112 руб.</span>
+                </div>
+                <button type="button" class="btn_buy">Оплатить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_contacts">
+            <ul class="footer_list">
+                <li><a href=""><i class="far fa-user"></i><span>8 (989) 999 99 99</span></a></li>
+                <li><a href=""><i class="far fa-user"></i><span>healthfoodg@mail.ru</span></a></li>
+                <li><i class="far fa-user"></i><span>Россия, 428038, г.Чебоксары, ул.<br>
+                        Пирогова, д.18</span></li>
+            </ul>
+            <button type="button" class="button_ask">Задать вопрос</button>
+        </div>
+        <div class="footer_wrapper">
+            <div class="footer_bottom">
+                <span>© 2020-2022 ООО «Правильный рацион»</span>
+                <span>Публичная оферта | Согласие на обработку персональных данных</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

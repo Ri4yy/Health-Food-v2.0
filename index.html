@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec606aa710.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/> -->
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header_contacts">
+            <p class="header_orders">Принимаем заказы 24 часа</p>
+            <button type="button" class="button_question">ОСТАЛИСЬ ВОПРОСЫ?</button>
+            <ul>
+                <li><a href="" class="header_icon"><i class="fab fa-vk"></i></a></li>
+                <li><a href="" class="header_icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" class="phone">8 (989) 999 99 99</a></li>
+            </ul>
+            <button type="button" class="button_call btn" id="openModal">Перезвоните мне</button>
+        </div>
+        <div class="header_nav">
+            <div class="header_wrapper_nav">
+                <a href="" class="logo">Logo</a>
+                <div class="menu_btn">
+                    <div class="menu-btn_burger"></div>
+                </div>
+                <ul class="header_list">
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="page/about.html">О компании</a></li>
+                    <li><a href="page/rations.html">Готовые рационы</a></li>
+                    <li><a href="page/shop.html">Интернет-магазин</a></li>
+                    <li><a href="page/certificates.html">Сертификаты</a></li>
+                    <li><a href="page/discount.html">Акции</a></li>
+                    <li><a href="page/delivery.html">Оплата и доставка</a></li>
+                    <li><a href="page/price.html">Прайс лист</a></li>
+                    <li><a href="page/contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="header_menu">
+                    <li><a href="page/rations.html">Готовые рационы</a></li>
+                    <li><a href="page/shop.html">Интернет-магазин</a></li>
+                    <li><a href="page/delivery.html">Оплата и доставка</a></li>
+                </ul>
+                <ul class="header_control">
+                    <li><a href=""><i class="far fa-user"></i><span class="constructor">Конструктор рациона</span></a>
+                    </li>
+                    <li><a href="page/profile.html"><i class="far fa-user"></i></a></li>
+                    <li><a href="page/cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="parallax">
+        <div class="header_info">
+            <h1>Доставка здорового питания в Чебоксарах</h1>
+            <ul class="delivery">
+                <li><img src="img/tray.png" alt="tray" class="top_icon">от 590 руб. в день</li>
+                <li><img src="img/express-delivery.png" alt="deliv" class="top_icon">ежедневная доставка</li>
+            </ul>
+            <div class="btn_info">
+                <button type="button" class="button_try">Попробовать сейчас</button>
+                <span>Бесплатная доставка в любой день</span>
+            </div>
+        </div>
+        <div class="mask"></div>
+    </div>
+
+    <div class="main_content">
+        <div class="how_wrapper">
+            <h2>КАК РАБОТАЕТ HEALTH FOOD</h2>
+            <ul class="how_list">
+                <li><img src="img/menu.png" alt="menu">
+                    <h3>Разрабатываем рецептуру с учетом КБЖУ и целей</h3>
+                </li>
+                <li><img src="img/free.png" alt="free">
+                    <h3>Бесплатно доставляем свежую еду</h3>
+                </li>
+                <li><img src="img/salad.png" alt="salad">
+                    <h3>Готовим вкусную и полезную еду по уникальным рецептам</h3>
+                </li>
+            </ul>
+            <div class="owl-carousel owl-theme wow fadeInLeft" data-wow-duration="2s">
+                <div class="item"><img src="img/menu.png" alt="menu" style="width: 130px;">
+                    <h3>Разрабатываем рецептуру с учетом КБЖУ и целей</h3>
+                </div>
+                <div class="item"><img src="img/free.png" alt="free" style="width: 130px;">
+                    <h3>Бесплатно доставляем свежую еду</h3>
+                </div>
+                <div class="item"><img src="img/salad.png" alt="salad" style="width: 130px;">
+                    <h3>Готовим вкусную и полезную еду по уникальным рецептам</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="programs" id="how_scroll">
+            <h2 class="wow backInLeft">ПОПУЛЯРНЫЕ ПРОГРАММЫ</h2>
+            <ul class="program_card">
+                <li class="program_card_list wow fadeInLeft" data-wow-duration="2s">
+                    <div class="img_card">
+                        <img src="img/card.png" alt="card" class="card_picture">
+                    </div>
+                    <div class="desc_card">
+                        <span>Снижение</span>
+                        <span>1400 Ккал</span>
+                        <ul class="card_list">
+                            <li>похудение в кратчайшие сроки</li>
+                            <li>повышение энергии и сил</li>
+                            <li>снижение веса при сидячем образе жизни</li>
+                        </ul>
+                    </div>
+                    <div class="price_card">
+                        <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                    </div>
+                </li>
+                <li class="program_card_list wow fadeInLeft" data-wow-duration="1s">
+                    <div class="img_card">
+                        <img src="img/card.png" alt="card" class="card_picture">
+                    </div>
+                    <div class="desc_card">
+                        <span>Снижение</span>
+                        <span>1400 Ккал</span>
+                        <ul class="card_list">
+                            <li>похудение в кратчайшие сроки</li>
+                            <li>повышение энергии и сил</li>
+                            <li>снижение веса при сидячем образе жизни</li>
+                        </ul>
+                    </div>
+                    <div class="price_card">
+                        <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                    </div>
+                </li>
+                <li class="program_card_list wow fadeInRight" data-wow-duration="1s">
+                    <div class="img_card">
+                        <img src="img/card.png" alt="card" class="card_picture">
+                    </div>
+                    <div class="desc_card">
+                        <span>Снижение</span>
+                        <span>1400 Ккал</span>
+                        <ul class="card_list">
+                            <li>похудение в кратчайшие сроки</li>
+                            <li>повышение энергии и сил</li>
+                            <li>снижение веса при сидячем образе жизни</li>
+                        </ul>
+                    </div>
+                    <div class="price_card">
+                        <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                    </div>
+                </li>
+                <li class="program_card_list wow fadeInRight" data-wow-duration="2s">
+                    <div class="img_card">
+                        <img src="img/card.png" alt="card" class="card_picture">
+                    </div>
+                    <div class="desc_card">
+                        <span>Снижение</span>
+                        <span>1400 Ккал</span>
+                        <ul class="card_list">
+                            <li>похудение в кратчайшие сроки</li>
+                            <li>повышение энергии и сил</li>
+                            <li>снижение веса при сидячем образе жизни</li>
+                        </ul>
+                    </div>
+                    <div class="price_card">
+                        <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="owl-carousel owl-theme">
+                <div class="item pr">
+                    <div class="program_card_list">
+                        <div class="img_card">
+                            <img src="img/card.png" alt="card" class="card_picture">
+                        </div>
+                        <div class="desc_card">
+                            <span>Снижение</span>
+                            <span>1400 Ккал</span>
+                            <ul class="card_list">
+                                <li>похудение в кратчайшие сроки</li>
+                                <li>повышение энергии и сил</li>
+                                <li>снижение веса при сидячем образе жизни</li>
+                            </ul>
+                        </div>
+                        <div class="price_card">
+                            <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item pr">
+                    <div class="program_card_list">
+                        <div class="img_card">
+                            <img src="img/card.png" alt="card" class="card_picture">
+                        </div>
+                        <div class="desc_card">
+                            <span>Снижение</span>
+                            <span>1400 Ккал</span>
+                            <ul class="card_list">
+                                <li>похудение в кратчайшие сроки</li>
+                                <li>повышение энергии и сил</li>
+                                <li>снижение веса при сидячем образе жизни</li>
+                            </ul>
+                        </div>
+                        <div class="price_card">
+                            <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item pr">
+                    <div class="program_card_list">
+                        <div class="img_card">
+                            <img src="img/card.png" alt="card" class="card_picture">
+                        </div>
+                        <div class="desc_card">
+                            <span>Снижение</span>
+                            <span>1400 Ккал</span>
+                            <ul class="card_list">
+                                <li>похудение в кратчайшие сроки</li>
+                                <li>повышение энергии и сил</li>
+                                <li>снижение веса при сидячем образе жизни</li>
+                            </ul>
+                        </div>
+                        <div class="price_card">
+                            <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="program_card_list">
+                        <div class="img_card">
+                            <img src="img/card.png" alt="card" class="card_picture">
+                        </div>
+                        <div class="desc_card">
+                            <span>Снижение</span>
+                            <span>1400 Ккал</span>
+                            <ul class="card_list">
+                                <li>похудение в кратчайшие сроки</li>
+                                <li>повышение энергии и сил</li>
+                                <li>снижение веса при сидячем образе жизни</li>
+                            </ul>
+                        </div>
+                        <div class="price_card">
+                            <a href="#"><span>Попробовать от 2200 Р в день</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="style">
+            <div class="style_picture wow fadeInLeft" data-wow-duration="1s">
+                <img src="img/style.png" alt="style">
+            </div>
+            <div class="style_desc wow zoomIn" data-wow-duration="1s">
+                <h3>Изысканная еда как стиль жизни</h3>
+                <span>Наши профессиональные специалисты разработают индивидуальную
+                    программу питания, исходя из желаемых результатов, учитывая
+                    состояние здоровья, сферу занятости, образ жизни, привычки и
+                    даже хобби. Рацион каждого нашего клиента позволяет достичь
+                    поставленных целей в установленные сроки с пользой для здоровья и
+                    психоэмоционального состояния.</span>
+            </div>
+        </div>
+
+        <div class="delivery_street">
+            <div class="delivery_desc wow backInLeft">
+                <h2>ДОСТАВКА РАЦИОНА НА ДОМ</h2>
+                <span>Бесплатная доставка на дом</span>
+            </div>
+            <div class="delivery_wrapper">
+                <div class="map wow zoomIn" data-wow-duration="2s">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A84e77cb992a7760195d5daaa8751b9db8e0d2d1357f554127046534014fc110b&amp;source=constructor"
+                        width="100%" height="480" frameborder="0"></iframe>
+                </div>
+                <div class="street_delivery wow fadeInRight" data-wow-duration="2s">
+                    <span>ВЫБЕРИТЕ РАЙОН ДОСТАВКИ</span>
+                    <span id="street">Чебоксары</span>
+                    <ul class="street_list">
+                        <li>Московский район</li>
+                        <li>Северозападный район</li>
+                        <li>Новоюжный район</li>
+                    </ul>
+                    <div class="mor-eve">
+                        <ul class="mr_list">
+                            <li><img src="img/sun.png" alt="sun" class="icon_mr">
+                                <div class="mr_wrapper">
+                                    <div>УТРО</div>
+                                    <div class="delivery_time_m">с 10.00 до 13.00</div>
+                                </div>
+                            </li>
+                            <li><img src="img/moon.png" alt="moon" class="icon_mr">
+                                <div class="mr_wrapper">
+                                    <div>ВЕЧЕР</div>
+                                    <div class="delivery_time_e">с 18.00 до 23.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p style="font-weight: 600;">Нет Вашего района на карте доставок?</p>
+                    <p>Не переживайте! Позвоните нам, и мы решим этот вопрос по телефону.</p>
+                    <p>Доставка осуществляется на следующий день при условии
+                        оформлении заказа до 11:00. После 11:00 доставка будет
+                        осуществлена послезавтра. Экспресс-доставка обсуждается
+                        индивидуально с оператором.</p>
+                    <div class="recall_me">
+                        <div><a href="#">8 (989) 999 99 99</a></div>
+                        <button type="button" class="btn_recall  btn" id="openModal">ПЕРЕЗВОНИТЕ МНЕ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper_info_block">
+            <div class="info_block">
+                <div class="left_side_info wow fadeInLeft" data-wow-duration="2s">
+                    <div class="num">01</div>
+                    <span>Минимум калорий</span>
+                    <p>Один из наиболее востребованных рационов питания с минимальным
+                        содержанием калорий и правильному распределению приемов пищи. Все
+                        блюда рациона FIT нацелены на быстрое насыщения организма и
+                        безвредному похудению. Благодаря совместной работе специалистов
+                        Института Питания, ведущих диетологов и фитнес тренеров Москвы мы
+                        создали целевой рацион с максимальным процентом положительного
+                        результата. По опросам наших постоянных клиентов, рацион FIT находится на
+                        первом месте среди худеющих и людей находящихся на «Сушке» перед
+                        соревнованиями.
+                    </p>
+                </div>
+                <div class="picture_info wow fadeInRight" data-wow-duration="2s">
+                    <img src="img/mincal.png" alt="mincal" class="img_info">
+                </div>
+            </div>
+            <div class="info_block">
+                <div class="picture_info wow fadeInLeft">
+                    <img src="img/dieta.png" alt="dieta" class="img_info">
+                </div>
+                <div class="left_side_info wow fadeInRight" data-wow-duration="2s">
+                    <div class="num">02</div>
+                    <span>Вкусная диета</span>
+                    <p>Теперь похудение и диета это вкусно! Ресторанное качество в каждом блюде –
+                        мы понимаем как сложно «худеть» ограничивая себя в потреблении любимой и
+                        привычной еды. Поддерживая Ваше стремление добиться результата и
+                        похудеть, мы разработали рецептуру, которая удивит Вас разнообразием блюд,
+                        вкусовых ощущений и результативностью.
+                    </p>
+                </div>
+            </div>
+            <div class="info_block">
+                <div class="left_side_info wow fadeInLeft" data-wow-duration="2s">
+                    <div class="num">03</div>
+                    <span>Быстрый результат</span>
+                    <p>Совмещая тренировки и рацион FIT добиться результата очень просто. Каждый
+                        день питания содержит все необходимое для сжигания жира и выводу воды из
+                        организма. Потребление калорий распределено таким образом, что Ваш
+                        организм нацеливается на максимально быстрое сжигание жировой массы д
+                        ля насыщения себя энергией, в результате организм не откладывает жир в
+                        «запас» а тратит его, переводя в энергию.
+                    </p>
+                </div>
+                <div class="picture_info wow fadeInRight" data-wow-duration="2s">
+                    <img src="img/res.png" alt="res" class="img_info">
+                </div>
+            </div>
+        </div>
+
+        <div class="FAQ">
+            <h2 class="wow backInLeft">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+            <ul class="FAQ_answer wow bounceInLeft">
+                <li class="active">Похудение</li>
+                <li>Тарифы</li>
+                <li>Оплата</li>
+                <li>Доставка</li>
+            </ul>
+            <div class="tabs_content active">
+                <ul class="FAQ_wl">
+                    <li class="wow fadeInLeft" data-wow-duration="1s">
+                        <div class="FAQ_header active">
+                            Нужно ли мне считать КБЖУ и соблюдат диету?
+                        </div>
+                        <div class="FAQ_desc active">
+                            Если вы питаетесь готовыми рационами серии FIT, необходимость подсчета КБЖУ полностью
+                            отсутствует. Разработкой рационов
+                            питания General-food занимаются ведущие диетологи Москвы, мы полностью учли нужное
+                            количество потребления КБЖУ,
+                            витаминов и микроэлементов для быстрого и надежного достижения результата. От Вас
+                            требуется
+                            полностью соблюдать диету
+                            рациона, по возможности сократить потребления сахара и немного заниматься спортом.
+                            Результат
+                            не заставит себя ждать!
+                        </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="1s">
+                        <div class="FAQ_header">
+                            Нужны ли разугрзочные дни?
+                        </div>
+                        <div class="FAQ_desc">
+                            Полезное питание обязано быть вкусным! Ежедневно мы готовим для Вас блюда ресторанного
+                            качества, а для любителей
+                            необычных и редких блюд были разработаны индивидуальные линейки питания. Мы понимаем,
+                            что
+                            соблюдать режим правильного
+                            питание сложно, несмотря на то что оно очень вкусное нужно баловать себя и сладостями -
+                            которые так же могут быть
+                            полезными для режима ПП!
+                        </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="1s">
+                        <div class="FAQ_header">
+                            Как рассчитать количество калорий необходимых для похудения?
+                        </div>
+                        <div class="FAQ_desc">
+                            Для того чтобы рассчитать количество калорий рекомендуемого для ежедневного потребления,
+                            а
+                            так же узнать на сколько
+                            можно похудеть без вреда для здоровья воспользуйтесь нашим сервисом "подбор питания"
+                        </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="1s">
+                        <div class="FAQ_header">
+                            Используете ли вы сахар или сахарозаменители и какие?
+                        </div>
+                        <div class="FAQ_desc">
+                            В меню линейки FIT сахар заменен на натуральный сахарозаменитель "Fitparad 7". В меню
+                            линейки POWER в некоторых блюдах
+                            содержится сахар в малых дозах. Подробный состав вы всегда можете уточнить у наших
+                            специалистов call-центра.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs_content">
+                <ul class="FAQ_wl">
+                    <li>
+                        <div class="FAQ_header active">
+                            Какой тариф выбрать?
+                        </div>
+                        <div class="FAQ_desc active">
+                            Выбор линейки питания зависит от ваших целей. Если вы хотите похудеть, то Вам подойдет
+                            рацион FIT (для женщин) или
+                            Balance (для мужчин с потреблением калорий более 2400 в день). Для правильного набора
+                            массы
+                            для женщин (занимающихся
+                            спортом) подойдет рацион Balance + дополнительные блюда из интернет-магазина, а для
+                            мужчин
+                            отличным выбором будет рацион
+                            Power + дополнительное блюда из интернет-магазина. Если вы не хотите заказывать
+                            дополнительные блюда, вы можете
+                            воспользоваться конструктором питания и подобрать для себя индивидуальный рацион с
+                            блюдами.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="FAQ_header">
+                            Чем отличаются линейки питания?
+                        </div>
+                        <div class="FAQ_desc">
+                            Главное отличие всех линеек питания — это суммарное, дневное количество КБЖУ. Рационы с
+                            низким содержанием калорий
+                            предназначены для людей, которые хотят избавиться от лишнего веса, с высоким содержанием
+                            калорий для тех, кто хочет
+                            сохранить или набрать правильную массу.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs_content">
+                <ul class="FAQ_wl">
+                    <li>
+                        <div class="FAQ_header active">
+                            CASHBACK
+                        </div>
+                        <div class="FAQ_desc active">
+                            Начисление кешбека на баланс личного кабинета происходит только при полной оплачен через
+                            сайт. Подробные условия вы
+                            можете прочитать на странице cashback
+                        </div>
+                    </li>
+                    <li>
+                        <div class="FAQ_header">
+                            Можно ли оплачивать частично?
+                        </div>
+                        <div class="FAQ_desc">
+                            Частичная оплата возможна при выборе «Курьеру по карте» или «Курьеру наличными»
+                        </div>
+                    </li>
+                    <li>
+                        <div class="FAQ_header">
+                            Как оплачивать рацион?
+                        </div>
+                        <div class="FAQ_desc">
+                            Вы можете оплатить заказ как онлайн по карте через сайт, так и курьеру (наличными или
+                            картой
+                            по терминалу). При полной
+                            предоплате вы получаете кешбек на внутренний баланс вашего личного кабинета. При
+                            оформлении
+                            заказа вы можете выбрать
+                            удобный для Вас способ оплаты.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs_content">
+                <ul class="FAQ_wl">
+                    <li>
+                        <div class="FAQ_header active">
+                            Доставка блюд из интернет-магазина
+                        </div>
+                        <div class="FAQ_desc active">
+                            Доставка блюд из интернет-магазина осуществляется, так же как и доставка рационов. Если
+                            вы
+                            хотите попробовать нашу еду
+                            уже сегодня и живете в районе ВАО, то вы можете воспользоваться сервисом Яндекс Еда или
+                            Деливери.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="FAQ_header">
+                            В какое время осуществляется доставка?
+                        </div>
+                        <div class="FAQ_desc">
+                            Мы разбили доставку на 2 интервала: с 8 до 14 и с 18 до 23. Но в отдельных случаях мы
+                            можем
+                            привести рацион в заранее оговоренное время.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="FAQ_header">
+                            Куда мне могут привезти мой рацион?
+                        </div>
+                        <div class="FAQ_desc">
+                            Доставка рациона питания осуществляется по выбранному Вами адресу. Для удобства заказа в
+                            личном кабинете Вы можете
+                            добавить несколько адресов, а при заказе выбрать наиболее удобный.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper_contact_block wow zoomIn">
+            <div class="contact_block">
+                <span>НЕ ЗНАЕШЬ КАКОЙ РАЦИОН ВЫБРАТЬ?</span>
+                <span>Заполни форму и получи консультацию нашего диетолога в течение 15 минут!</span>
+                <div class="input_contact">
+                    <input type="text" class="input_FI" placeholder="Имя">
+                    <input type="text" class="input_FI" placeholder="Фамилия">
+                    <button type="button" class="button_contact_recall btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+                </div>
+                <span class="agree">Нажимая кнопку, Вы соглашаетесь с условиями оферты и даёте своё согласие на
+                    обработку персональных
+                    данных.</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_contacts">
+            <ul class="footer_list">
+                <li><a href=""><i class="far fa-user"></i><span>8 (989) 999 99 99</span></a></li>
+                <li><a href=""><i class="far fa-user"></i><span>healthfoodg@mail.ru</span></a></li>
+                <li><i class="far fa-user"></i><span>Россия, 428038, г.Чебоксары, ул.<br>
+                        Пирогова, д.18</span></li>
+            </ul>
+            <button type="button" class="button_ask">Задать вопрос</button>
+        </div>
+        <div class="footer_wrapper">
+            <div class="footer_bottom">
+                <span>© 2020-2022 ООО «Правильный рацион»</span>
+                <span>Публичная оферта | Согласие на обработку персональных данных</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">ОБРАТНЫЙ ЗВОНОК</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <label for="#your_name">Имя</label>
+                    <input type="text" placeholder="Ваше имя" id="your_name" class="modal_input">
+                    <label for="#your_phone">Телефон</label>
+                    <input type="text" placeholder="Ваш телефон" id="your_phone" class="modal_input">
+                </div>
+                <div class="modal-bottom">
+                    <button type="button" class="btn_modal_get">ОТПРАВИТЬ</button>
+                    <span>Нажимая кнопку, Вы соглашаетесь с условиями оферты и даёте своё согласие на обработку
+                        персональных данных.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_quest">
+        <div class="modal-dialog">
+            <div class="modal-content" style="margin: 5% auto">
+                <div class="modal-header">
+                    <h3 class="modal-title">ЗАДАТЬ ВОПРОС</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <label for="#your_name">Имя</label>
+                    <input type="text" placeholder="Ваше имя" id="your_name" class="modal_input">
+                    <label for="#your_phone">Телефон</label>
+                    <input type="text" placeholder="Ваш телефон" id="your_phone" class="modal_input">
+                    <label for="#your_mes">Сообщение</label>
+                    <textarea id="your_mes" class="modal_area" placeholder="Введите ваше сообщение"></textarea>
+                </div>
+                <div class="modal-bottom">
+                    <button type="button" class="btn_modal_get">ОТПРАВИТЬ</button>
+                    <span>Нажимая кнопку, Вы соглашаетесь с условиями оферты и даёте своё согласие на обработку
+                        персональных данных.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

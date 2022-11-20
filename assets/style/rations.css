@@ -1,0 +1,683 @@
+/* ***********************************RATION********************************** */
+.main_card_diet {
+    overflow: hidden;
+}
+.hide_filter {
+    display: none;
+}
+.all_filter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.choose_ration h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.filter_card {
+    display: flex;
+    justify-content: space-between;
+}
+.left_filter {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.left_filter span {
+    color: #545454;
+    font-size: 18px;
+}
+.filter_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.filter_list li {
+    list-style: none;
+    margin-right: 5%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+.filter_list li:hover {
+    color: #545454;
+}
+.right_filter {
+    display: flex;
+    flex-direction: column;
+}
+.right_filter span {
+    color: #545454;
+    font-size: 18px;
+}
+.filter_list_right {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.filter_list_right li {
+    list-style: none;
+    cursor: pointer;
+}
+.filter_list_right li:hover {
+    color: #545454;
+}
+.wrapper_card_diet {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.card_diet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    width: 25%;
+    padding: 46px 43px;
+    border: 2px solid #E0E0E0;
+}
+.name_card_diet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed black;
+}
+.name_desc {
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+}
+.name_desc span:nth-child(1) {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.name_desc span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #828282;
+}
+.desc_card_diet {
+    display: flex;
+    flex-direction: column;
+}
+.name_card_diet img {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+}
+.BJU_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.BJU_list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+    border: 2px solid #74b445;
+    font-weight: 600;
+}
+.desc_card_diet h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.desc_card_diet_list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.desc_card_diet_list li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 3%;
+    font-size: 16px;
+    color: #9E9E9E;
+    margin-left: 30px;
+}
+.desc_card_diet_list li::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FDB600;
+    left: 0;
+    top: 7px;
+    margin-left: -30px;
+}
+.price_card_diet {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.left_price {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.left_price::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #c4c4c4;
+    left: 100%;
+    top: 0;
+    margin-left: 54%;
+}
+.left_price span:nth-child(1) {
+    color: black;
+    font-size: 16px;
+}
+.left_price span:nth-child(2) {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right_price {
+    display: flex;
+    flex-direction: column;
+}
+.right_price span:nth-child(1) {
+    color: black;
+    font-size: 16px;
+}
+.right_price span:nth-child(2) {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.more_info_bottom {
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+}
+.btn_more_info {
+    width: 290px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: 0px;
+    background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn_more_info:hover {
+    background: linear-gradient(89.03deg, #4BAF50 0.38%, #92C64E 99.6%);
+}
+
+@media (max-width: 1440px) {
+    .wrapper_card_diet {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 1280px) {
+    .choose_ration h2 {
+        margin-bottom: 40px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .left_filter {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .left_filter span {
+        color: #545454;
+        font-size: 18px;
+    }
+    .filter_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .filter_list li {
+        list-style: none;
+        margin-right: 5%;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .right_filter span {
+        color: #545454;
+        font-size: 18px;
+    }
+    .filter_list_right {
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .filter_list_right li {
+        list-style: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .wrapper_card_diet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    .card_diet {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        width: 23%;
+        padding: 46px 43px;
+        border: 2px solid #E0E0E0;
+    }
+    .left_price::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed #c4c4c4;
+        left: 100%;
+        top: 0;
+        margin-left: 27%;
+    }
+}
+@media (max-width: 1024px) {
+    .choose_ration h2 {
+        margin-bottom: 40px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .left_filter {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .left_filter span {
+        color: #545454;
+        font-size: 18px;
+    }
+    .filter_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .filter_list li {
+        list-style: none;
+        margin-right: 5%;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .right_filter span {
+        color: #545454;
+        font-size: 18px;
+    }
+    .filter_list_right {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .filter_list_right li {
+        list-style: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .wrapper_card_diet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+    .card_diet {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        width: 36%;
+        padding: 46px 43px;
+        border: 2px solid #E0E0E0;
+    }
+    .left_price::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed #c4c4c4;
+        left: 100%;
+        top: 0;
+        margin-left: 54%;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper_card_diet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+    .card_diet {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        width: 36%;
+        padding: 46px 43px;
+        border: 2px solid #E0E0E0;
+    }
+    .left_price::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed #c4c4c4;
+        left: 100%;
+        top: 0;
+        margin-left: 15%;
+    }
+}
+@media (max-width: 714px) {
+    .filter_card {
+        display: flex;
+        flex-direction: column;
+    }
+    .hide_filter {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+        height: 70px;
+        background-color: #f9f8f3;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .hide {
+        display: flex;
+    }
+    .all_filter {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .choose_ration h2 {
+        margin-bottom: 40px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .left_filter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left_filter span {
+        color: #545454;
+        font-size: 22px;
+    }
+    .filter_list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .filter_list li {
+        list-style: none;
+        /* margin-right: 5%; */
+        margin-bottom: 2%;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .filter_list li:hover {
+        color: #74b445;
+    }
+    .right_filter span {
+        color: #545454;
+        font-size: 22px;
+    }
+    .filter_list_right {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .filter_list_right li {
+        list-style: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .wrapper_card_diet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+    .card_diet {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        width: 100%;
+        padding: 46px 43px;
+        border: 2px solid #E0E0E0;
+    }
+    .left_price::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed #c4c4c4;
+        left: 100%;
+        top: 0;
+        margin-left: 115%;
+    }
+    .btn_more_info {
+        width: 350px;
+        height: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 425px) {
+    .wrapper_card_diet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    .card_diet {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        width: 100%;
+        padding: 46px 43px;
+        border: 2px solid #E0E0E0;
+    }
+    .left_price::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed #c4c4c4;
+        left: 100%;
+        top: 0;
+        margin-left: 40%;
+    }
+    .btn_more_info {
+        width: 300px;
+        height: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 320px) {
+    .wrapper_card_diet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    .card_diet {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100%;
+        width: 100%;
+        padding: 23px 21px;
+        border: 2px solid #E0E0E0;
+    }
+    .left_price::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed #c4c4c4;
+        left: 100%;
+        top: 0;
+        margin-left: 28%;
+    }
+    .name_card_diet {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px dashed black;
+    }
+    .name_desc span:nth-child(1) {
+        font-size: 22px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .name_desc span:nth-child(2) {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #828282;
+    }
+    .name_card_diet img {
+        width: 40px;
+        margin-right: 20px;
+    }
+    .BJU_list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        color: black;
+        font-size: 16px;
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        border: 2px solid #74b445;
+        font-weight: 600;
+    }
+    .desc_card_diet h3 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .desc_card_diet_list li {
+        position: relative;
+        list-style: none;
+        margin-bottom: 3%;
+        font-size: 14px;
+        color: #9E9E9E;
+        margin-left: 30px;
+    }
+    .price_card_diet {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .left_price span:nth-child(1) {
+        color: black;
+        font-size: 14px;
+    }
+    .left_price span:nth-child(2) {
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .right_price span:nth-child(1) {
+        color: black;
+        font-size: 14px;
+    }
+    .right_price span:nth-child(2) {
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .btn_more_info {
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}

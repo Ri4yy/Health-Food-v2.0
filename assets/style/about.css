@@ -1,0 +1,127 @@
+.reasons_list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.reasons_item {
+    margin-bottom: 80px;
+    display: flex;
+}
+.reasons_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.reasons_info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reasons_picture {
+    border-radius: 40px;
+    width: 588px;
+    height: 466px;
+    object-fit: cover;
+}
+.reasons_info h2 {
+    font-size: 46px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.reasons_desc {
+    font-size: 18px;
+}
+.reason_2 {
+    order: 2;
+}
+.reason_picture_2 {
+    order: 1;
+}
+
+@media (max-width: 1280px) {
+    .reasons_list {
+        display: flex;
+        flex-direction: row;
+        overflow-x: overlay;
+    }
+    .reasons_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .reasons_info {
+        order: 2;
+    }
+    .reasons_picture {
+        order: 1;
+    }
+    .reasons_picture {
+        border-radius: 20px;
+        width: 360px;
+        height: 202px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    .reasons_item {
+        margin-bottom: 0;
+    }
+    .reasons_info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .reasons_info h2 {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .reasons_desc {
+        font-size: 14px;
+    }
+    .reasons_item {
+        margin-right: 20px;
+    }
+    .reasons_wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 425px) {
+    .reasons_picture {
+        border-radius: 20px;
+        width: 335px;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    .reasons_info h2 {
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    .reasons_picture {
+        border-radius: 20px;
+        width: 280px;
+        height: 157px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    .reasons_info h2 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

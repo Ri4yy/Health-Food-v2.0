@@ -1,0 +1,126 @@
+.cert_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.cert_left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.cert_left span {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.cert_price {
+    font-size: 22px;
+    color: black;
+    font-weight: 800;
+}
+.cert_picture {
+    width: 307px;
+    height: 197px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.btn_more_view {
+    width: 220px;
+    height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: 0px;
+    background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.btn_more_view:hover {
+    background: linear-gradient(89.03deg, #4BAF50 0.38%, #92C64E 99.6%);
+}
+.certs_terms {
+    width: 1286px;
+    margin: 0 auto;
+}
+.certs_terms h2 {
+    font-size: 46px;
+}
+.hide_list {
+    overflow: hidden;
+    height: 100px;
+}
+.show_list {
+    height: 100%;
+}
+.certs_list li {
+    color:#4BAF50;
+    margin-bottom: 10px;
+}
+.certs_list li span {
+    color: black;
+    font-size: 18px;
+}
+@media (max-width: 1286px) {
+    .certs_terms {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .certs_terms h2 {
+        font-size: 36px;
+    }
+    .certs_list li span {
+        color: black;
+        font-size: 16px;
+    }
+}
+@media (max-width: 1024px) {
+    .certs_terms {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .certs_terms h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .certs_list li span {
+        color: black;
+        font-size: 14px;
+    }
+    .cert_left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cert_left span {
+        margin-bottom: 30px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .cert_price {
+        font-size: 18px;
+        color: black;
+        font-weight: 800;
+    }
+    .cert_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cert_picture {
+        width: 307px;
+        height: 197px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .cert_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 425px) {
+    .cert_btn {
+        text-align: center;
+    }
+}

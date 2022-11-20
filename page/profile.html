@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec606aa710.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <title>Профиль</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="header_contacts">
+            <p class="header_orders">Принимаем заказы 24 часа</p>
+            <button type="button" class="button_question">ОСТАЛИСЬ ВОПРОСЫ?</button>
+            <ul>
+                <li><a href="" class="header_icon"><i class="fab fa-vk"></i></a></li>
+                <li><a href="" class="header_icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" class="phone">8 (989) 999 99 99</a></li>
+            </ul>
+            <button type="button" class="button_call">Перезвоните мне</button>
+        </div>
+        <div class="header_nav">
+            <div class="header_wrapper_nav">
+                <a href="" class="logo">Logo</a>
+                <div class="menu_btn">
+                    <div class="menu-btn_burger"></div>
+                </div>
+                <ul class="header_list">
+                    <li><a href="">Меню</a></li>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="certificates.html">Сертификаты</a></li>
+                    <li><a href="discount.html">Акции</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                    <li><a href="price.html">Прайс лист</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="header_menu">
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                </ul>
+                <ul class="header_control">
+                    <li><a href=""><i class="far fa-user"></i><span class="constructor">Конструктор рациона</span></a>
+                    </li>
+                    <li><a href="profile.html"><i class="far fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="main_content">
+        <div class="wrapper_profile">
+            <div class="profile_list">
+                Профиль
+            </div>
+            <div class="left_profile_window">
+                <h2>Имя</h2>
+                <ul class="top_profile_list">
+                    <li class="active"><img src="../img/user.png" alt="user">Профиль</li>
+                    <li><img src="../img/star.png" alt="star">Мой прогресс</li>
+                    <a href="discount.html"><img src="../img/discount-label.png" alt="discount">Акции</a>
+                    <a href="cart.html"><img src="../img/shopping-cart.png" alt="cart">Корзина</a>
+                </ul>
+                <ul class="bottom_profile_list">
+                    <li><img src="../img/settings.png" alt="settings">Настройки</li>
+                    <li><img src="../img/logout.png" alt="logout">Выход</li>
+                </ul>
+            </div>
+            <div class="tabs_profile active">
+                <div class="right_profile_window">
+                    <div class="top_share_block">
+                        <span>Рекомендуй нас друзьям<br>
+                            и получи <span>500 бонусов</span> </span>
+                        <button type="button" class="btn_get">Получить</button>
+                    </div>
+                    <div class="middle_block">
+                        <div class="bonus_block">
+                            <span>Бонусы</span>
+                            <div class="bonus_num">
+                                <img src="../img/bonus.png" alt="bonus">
+                                <span>5000</span>
+                            </div>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="calculator_block">
+                            <span>Настройте свою цель
+                                и добивайтесь результата</span>
+                            <button type="button" class="btn_setting">настроить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs_profile">
+                <div class="right_profile_calc">
+                    <h2>Калькулятор для подбора
+                        оптимального количества калорий</h2>
+                    <div class="choose_gender" id="gender">
+                        <div id="female" class="calculating_item">Женщина</div>
+                        <div id="male" class="calculating_item choose_activity_item_active">Мужчина</div>
+                    </div>
+                    <div class="choose_param">
+                        <input type="text" id="height" placeholder="Введите рост" class="input_choose">
+                        <input type="text" id="weight" placeholder="Введите вес"  class="input_choose">
+                        <input type="text" id="age" placeholder="Введите возраст" class="input_choose">
+                    </div>
+                    <span>Физическая активность:</span>
+                    <div class="choose_activity">
+                        <div data-ratio="1.2" id="low" class="choose_activity_item">Низкая активность </div>
+                        <div data-ratio="1.375" id="small"  class="choose_activity_item choose_activity_item_active">Невысокая активность</div>
+                        <div data-ratio="1.55" id="medium" class="choose_activity_item">Умеренная активность</div>
+                        <div data-ratio="1.725" id="high" class="choose_activity_item">Высокая активность</div>
+                    </div>
+                    <div class="calculating__result">
+                        Ваша суточная норма: <span>2700</span> ккал
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_contacts">
+            <ul class="footer_list">
+                <li><a href=""><i class="far fa-user"></i><span>8 (989) 999 99 99</span></a></li>
+                <li><a href=""><i class="far fa-user"></i><span>healthfoodg@mail.ru</span></a></li>
+                <li><i class="far fa-user"></i><span>Россия, 428038, г.Чебоксары, ул.<br>
+                        Пирогова, д.18</span></li>
+            </ul>
+            <button type="button" class="button_ask">Задать вопрос</button>
+        </div>
+        <div class="footer_wrapper">
+            <div class="footer_bottom">
+                <span>© 2020-2022 ООО «Правильный рацион»</span>
+                <span>Публичная оферта | Согласие на обработку персональных данных</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/calc.js"></script>
+</body>
+
+</html>

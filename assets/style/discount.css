@@ -1,0 +1,136 @@
+.discount_header_picture {
+    background-image: url(../../img/descount.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discount_header_picture span {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+}
+.main_content h2 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.main_content b {
+    font-weight: 800;
+    color: #4BAF50;
+    font-size: 64px;
+}
+.desc_discount {
+    margin-top: 40px;
+    font-size: 22px;
+    margin-bottom: 100px;
+}
+@media (max-width: 1024px) {
+    .discount_header_picture {
+        background-image: url(../../img/descount.png);
+        background-size: cover;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .discount_header_picture span {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .main_content h2 {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .desc_discount {
+        margin-top: 40px;
+        font-size: 22px;
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .discount_header_picture {
+        background-image: url(../../img/descount.png);
+        background-size: cover;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .discount_header_picture span {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+}
+@media (max-width: 714px) {
+    .discount_header_picture span {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+}
+@media (max-width: 425px) {
+    .discount_header_picture {
+        background-image: url(../../img/descount.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .discount_header_picture span {
+        color: #fff;
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .main_content h2 {
+        font-size: 22px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .main_content b {
+        font-weight: 800;
+        color: #4BAF50;
+        font-size: 48px;
+    }
+}
+@media (max-width: 320px) {
+    .discount_header_picture {
+        background-image: url(../../img/descount.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .discount_header_picture span {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .main_content b {
+        font-weight: 800;
+        color: #4BAF50;
+        font-size: 36px;
+    }
+    .desc_discount {
+        margin-top: 40px;
+        font-size: 18px;
+        margin-bottom: 100px;
+    }
+}

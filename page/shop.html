@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec606aa710.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <title>Интернет-магазин</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="header_contacts">
+            <p class="header_orders">Принимаем заказы 24 часа</p>
+            <button type="button" class="button_question">ОСТАЛИСЬ ВОПРОСЫ?</button>
+            <ul>
+                <li><a href="" class="header_icon"><i class="fab fa-vk"></i></a></li>
+                <li><a href="" class="header_icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" class="phone">8 (989) 999 99 99</a></li>
+            </ul>
+            <button type="button" class="button_call" id="openModal">Перезвоните мне</button>
+        </div>
+        <div class="header_nav">
+            <div class="header_wrapper_nav">
+                <a href="" class="logo">Logo</a>
+                <div class="menu_btn">
+                    <div class="menu-btn_burger"></div>
+                </div>
+                <ul class="header_list">
+                    <li><a href="">Меню</a></li>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="certificates.html">Сертификаты</a></li>
+                    <li><a href="discount.html">Акции</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                    <li><a href="price.html">Прайс лист</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="header_menu">
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                </ul>
+                <ul class="header_control">
+                    <li><a href=""><i class="far fa-user"></i><span class="constructor">Конструктор рациона</span></a>
+                    </li>
+                    <li><a href="profile.html"><i class="far fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="shop_header_picture">
+        <span>ИНТЕРНЕТ-МАГАЗИН</span>
+    </div>
+
+    <div class="main_content">
+        <ul class="breadcrumbs">
+            <li><a href="../index.html">Главная</a></li>
+            <li>></li>
+            <li>Интернет-магазин</li>
+        </ul>
+
+        <div class="filter_shop">
+            <div class="left_filter_shop">
+                <ul class="shop_filter_list">
+                    <li id="all" class="active">Все</li>
+                    <li id="breakfast">Завтрак</li>
+                    <li id="lunch">Обед</li>
+                    <li id="dinner">Ужин</li>
+                </ul>
+            </div>
+            <div class="right_filter_shop">
+                <input type="text" placeholder="Поиск по названию" class="input_search">
+            </div>
+        </div>
+
+        <div class="wrapper_shop_card">
+            <div class="wrapper_center_shop">
+                <div class="shop_card" id="breakfast">
+                    <div class="img_card_shop">
+                        <img src="../img/eggs.png" alt="eggs" class="picture_card_shop">
+                    </div>
+                    <h3>Русская яичница на
+                        сковороде</h3>
+                    <ul class="shop_char_card">
+                        <li><span>Вес</span><span>N г.</span></li>
+                        <li><span>кКал</span><span>N г.</span></li>
+                        <li><span>Белки</span><span>N г.</span></li>
+                        <li><span>Жиры</span><span>N г.</span></li>
+                        <li><span>Углев.</span><span>N г.</span></li>
+                    </ul>
+                    <div class="price_card_shop">
+                        <span>312 ₽</span>
+                        <button type="button" class="btn_shop">В корзину</button>
+                    </div>
+                </div>
+                <div class="shop_card" id="lunch">
+                    <div class="img_card_shop">
+                        <img src="../img/eggs.png" alt="eggs" class="picture_card_shop">
+                    </div>
+                    <h3>Русская яичница на
+                        сковороде</h3>
+                    <ul class="shop_char_card">
+                        <li><span>Вес</span><span>N г.</span></li>
+                        <li><span>кКал</span><span>N г.</span></li>
+                        <li><span>Белки</span><span>N г.</span></li>
+                        <li><span>Жиры</span><span>N г.</span></li>
+                        <li><span>Углев.</span><span>N г.</span></li>
+                    </ul>
+                    <div class="price_card_shop">
+                        <span>312 ₽</span>
+                        <button type="button" class="btn_shop">В корзину</button>
+                    </div>
+                </div>
+                <div class="shop_card" id="dinner">
+                    <div class="img_card_shop">
+                        <img src="../img/eggs.png" alt="eggs" class="picture_card_shop">
+                    </div>
+                    <h3>Русская яичница на
+                        сковороде</h3>
+                    <ul class="shop_char_card">
+                        <li><span>Вес</span><span>N г.</span></li>
+                        <li><span>кКал</span><span>N г.</span></li>
+                        <li><span>Белки</span><span>N г.</span></li>
+                        <li><span>Жиры</span><span>N г.</span></li>
+                        <li><span>Углев.</span><span>N г.</span></li>
+                    </ul>
+                    <div class="price_card_shop">
+                        <span>312 ₽</span>
+                        <button type="button" class="btn_shop">В корзину</button>
+                    </div>
+                </div>
+                <div class="shop_card" id="lunch">
+                    <div class="img_card_shop">
+                        <img src="../img/eggs.png" alt="eggs" class="picture_card_shop">
+                    </div>
+                    <h3>Русская яичница на
+                        сковороде</h3>
+                    <ul class="shop_char_card">
+                        <li><span>Вес</span><span>N г.</span></li>
+                        <li><span>кКал</span><span>N г.</span></li>
+                        <li><span>Белки</span><span>N г.</span></li>
+                        <li><span>Жиры</span><span>N г.</span></li>
+                        <li><span>Углев.</span><span>N г.</span></li>
+                    </ul>
+                    <div class="price_card_shop">
+                        <span>312 ₽</span>
+                        <button type="button" class="btn_shop">В корзину</button>
+                    </div>
+                </div>
+                <div class="shop_card" id="dinner">
+                    <div class="img_card_shop">
+                        <img src="../img/eggs.png" alt="eggs" class="picture_card_shop">
+                    </div>
+                    <h3>Русская яичница на
+                        сковороде</h3>
+                    <ul class="shop_char_card">
+                        <li><span>Вес</span><span>N г.</span></li>
+                        <li><span>кКал</span><span>N г.</span></li>
+                        <li><span>Белки</span><span>N г.</span></li>
+                        <li><span>Жиры</span><span>N г.</span></li>
+                        <li><span>Углев.</span><span>N г.</span></li>
+                    </ul>
+                    <div class="price_card_shop">
+                        <span>312 ₽</span>
+                        <button type="button" class="btn_shop">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery_street">
+            <div class="delivery_desc wow backInLeft">
+                <h2>ДОСТАВКА РАЦИОНА НА ДОМ</h2>
+                <span>Бесплатная доставка на дом</span>
+            </div>
+            <div class="delivery_wrapper">
+                <div class="map wow zoomIn" data-wow-duration="2s">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A84e77cb992a7760195d5daaa8751b9db8e0d2d1357f554127046534014fc110b&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
+                </div>
+                <div class="street_delivery wow fadeInRight" data-wow-duration="2s">
+                    <span>ВЫБЕРИТЕ РАЙОН ДОСТАВКИ</span>
+                    <span id="street">Чебоксары</span>
+                    <ul class="street_list">
+                        <li>Московский район</li>
+                        <li>Северозападный район</li>
+                        <li>Новоюжный район</li>
+                    </ul>
+                    <div class="mor-eve">
+                        <ul class="mr_list">
+                            <li><img src="../img/sun.png" alt="sun" class="icon_mr">
+                                <div class="mr_wrapper">
+                                    <div>УТРО</div>
+                                    <div class="delivery_time_m">с 10.00 до 13.00</div>
+                                </div>
+                            </li>
+                            <li><img src="../img/moon.png" alt="moon" class="icon_mr">
+                                <div class="mr_wrapper">
+                                    <div>ВЕЧЕР</div>
+                                    <div class="delivery_time_e">с 18.00 до 23.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p style="font-weight: 600;">Нет Вашего района на карте доставок?</p>
+                    <p>Не переживайте! Позвоните нам, и мы решим этот вопрос по телефону.</p>
+                    <p>Доставка осуществляется на следующий день при условии
+                        оформлении заказа до 11:00. После 11:00 доставка будет
+                        осуществлена послезавтра. Экспресс-доставка обсуждается
+                        индивидуально с оператором.</p>
+                    <div class="recall_me">
+                        <div><a href="#">8 (989) 999 99 99</a></div>
+                        <button type="button" class="btn_recall">ПЕРЕЗВОНИТЕ МНЕ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_contacts">
+            <ul class="footer_list">
+                <li><a href=""><i class="far fa-user"></i><span>8 (989) 999 99 99</span></a></li>
+                <li><a href=""><i class="far fa-user"></i><span>healthfoodg@mail.ru</span></a></li>
+                <li><i class="far fa-user"></i><span>Россия, 428038, г.Чебоксары, ул.<br>
+                        Пирогова, д.18</span></li>
+            </ul>
+            <button type="button" class="button_ask">Задать вопрос</button>
+        </div>
+        <div class="footer_wrapper">
+            <div class="footer_bottom">
+                <span>© 2020-2022 ООО «Правильный рацион»</span>
+                <span>Публичная оферта | Согласие на обработку персональных данных</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

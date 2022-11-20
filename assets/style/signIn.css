@@ -1,0 +1,141 @@
+.wrapper_sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.container {
+    width: 350px;
+    height: 470px;
+    backdrop-filter: blur(50px);
+    background-color: #dff7d673;
+    border-radius: 5px;
+    padding: 17px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+}
+.toggle_box {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+.btn_choose_field {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 40px;
+    color: #74b445;
+    z-index: 10;
+}
+.btn_choose_field p {
+    margin-left: 15px;
+}
+#toggle_btn {
+    width: 140px;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    background-color: #74b445;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.active_sign {
+    color: #fff;
+}
+.form {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .5s;
+}
+.input_box {
+    position: relative;
+    margin: 15px 0;
+}
+.input_user {
+    width: 100%;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    padding: 15px 10px;
+    padding-left: 35px;
+    background-color: transparent;
+    color: #C0C0C0;
+    font-size: 16px;
+}
+.input_user:focus {
+    outline: 0;
+    border-color: #74b445;
+}
+.input_box img {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    width: 18px;
+    z-index: 10;
+}
+.account a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+}
+.btn_user_enter {
+    width: 100%;
+    font-size: 16px;
+    padding: 13px 0;
+    margin-top: 25px;
+    background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+    font-weight: 700;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn_user_enter:hover {
+    background: linear-gradient(89.03deg, #4BAF50 0.38%, #92C64E 99.6%);
+}
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: #ffffff73;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 3px #0000002b;
+}
+.account a, .account p {
+    font-size: 14px;
+    padding: 17px;
+}
+#signUp-form {
+    left: 350px;
+}
+.check_block {
+    display: flex;
+    flex-direction: column;
+}
+.check_top {
+    display: flex;
+    align-items: center;
+}
+.check_block a {
+    color: black;
+    margin-top: 10px;
+}

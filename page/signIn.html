@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec606aa710.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="header_contacts">
+            <p class="header_orders">Принимаем заказы 24 часа</p>
+            <button type="button" class="button_question">ОСТАЛИСЬ ВОПРОСЫ?</button>
+            <ul>
+                <li><a href="" class="header_icon"><i class="fab fa-vk"></i></a></li>
+                <li><a href="" class="header_icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" class="phone">8 (989) 999 99 99</a></li>
+            </ul>
+            <button type="button" class="button_call" id="openModal">Перезвоните мне</button>
+        </div>
+        <div class="header_nav">
+            <div class="header_wrapper_nav">
+                <a href="" class="logo">Logo</a>
+                <div class="menu_btn">
+                    <div class="menu-btn_burger"></div>
+                </div>
+                <ul class="header_list">
+                    <li><a href="">Меню</a></li>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="certificates.html">Сертификаты</a></li>
+                    <li><a href="discount.html">Акции</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                    <li><a href="price.html">Прайс лист</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="header_menu">
+                    <li><a href="rations.html">Готовые рационы</a></li>
+                    <li><a href="shop.html">Интернет-магазин</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                </ul>
+                <ul class="header_control">
+                    <li><a href=""><i class="far fa-user"></i><span class="constructor">Конструктор рациона</span></a>
+                    </li>
+                    <li><a href="profile.html"><i class="far fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper_sign">
+        <div class="container">
+            <div class="toggle_box">
+                <span id="toggle_btn"></span>
+
+                <div class="btn_choose_field active_sign" id="signIn-btn">
+                    <i class="far fa-user"></i>
+                    <p>Вход</p>
+                </div>
+
+                <div class="btn_choose_field" id="signUp-btn">
+                    <i class="far fa-user"></i>
+                    <p>Регистрация</p>
+                </div>
+
+                <form action="#" class="form" id="signIn-form">
+                    <div class="input_box">
+                        <img src="../img/user-r.png" alt=""><input type="text" placeholder="Введите имя"
+                            class="input_user">
+                    </div>
+                    <div class="input_box">
+                        <img src="../img/padlock.png" alt=""><input type="email" placeholder="Введите пароль"
+                            class="input_user">
+                    </div>
+
+                    <div class="check_block">
+                        <div class="check_top">
+                            <input type="checkbox" class="input_check"><label for="">Запомнить меня</label>
+                        </div>
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                    <button class="btn_user_enter">Войти</button>
+                    <div class="account">
+                        <p>Нет аккаунта?</p><a href="#">Зарегистрироваться</a>
+                    </div>
+                </form>
+
+                <form action="#" class="form" id="signUp-form">
+                    <div class="input_box">
+                        <img src="../img/user-r.png" alt=""><input type="text" placeholder="Введите имя"
+                            class="input_user">
+                    </div>
+                    <div class="input_box">
+                        <img src="../img/mail-r.png" alt=""><input type="email" placeholder="Введите e-mail"
+                            class="input_user">
+                    </div>
+                    <div class="input_box">
+                        <img src="../img/padlock.png" alt=""><input type="password" placeholder="Введите пароль"
+                            class="input_user">
+                    </div>
+                    <div class="check_block">
+                        <div class="check_top">
+                            <input type="checkbox" class="input_check"><label for="">Принять условия</label>
+                        </div>
+                    </div>
+                    <button class="btn_user_enter">Регистрация</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_contacts">
+            <ul class="footer_list">
+                <li><a href=""><i class="far fa-user"></i><span>8 (989) 999 99 99</span></a></li>
+                <li><a href=""><i class="far fa-user"></i><span>healthfoodg@mail.ru</span></a></li>
+                <li><i class="far fa-user"></i><span>Россия, 428038, г.Чебоксары, ул.<br>
+                        Пирогова, д.18</span></li>
+            </ul>
+            <button type="button" class="button_ask">Задать вопрос</button>
+        </div>
+        <div class="footer_wrapper">
+            <div class="footer_bottom">
+                <span>© 2020-2022 ООО «Правильный рацион»</span>
+                <span>Публичная оферта | Согласие на обработку персональных данных</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

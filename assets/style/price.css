@@ -1,0 +1,479 @@
+.certif_header_picture {
+    background-image: url(../../img/price_list.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certif_header_picture span {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+}
+.scrolling-wrapper {
+    overflow-x: overlay;
+    /* overflow-y: hidden; */
+    white-space: nowrap;
+    /* width: 1440px; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+.pricelist_item {
+    display: flex;
+    width: 100%;
+}
+.card:nth-child(1) {
+    list-style: none;
+    border-bottom: 1px dashed #E0E0E0;
+}
+.card:not(:first-child) .pricelist_item span {
+    margin-right: 160px;
+    /* width: 200px; */
+    height: 80px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    color: #575757;
+}
+.pricelist_item span:nth-child(1) {
+    font-weight: 600;
+}
+.th span {
+    margin-right: 160px;
+    height: 80px;
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.th span:nth-child(1) {
+    /* width: 200px; */
+    margin-right: 80px;
+}
+.th span:nth-child(2) {
+    width: 200px;
+    margin-right: 200px;
+}
+.th span:nth-child(3),
+.th span:nth-child(4),
+.th span:nth-child(5) {
+    width: 200px;
+    margin-right: 165px;
+}
+.card:nth-child(odd):not(:first-child) {
+    background-color: rgba(146, 198, 78, 0.1);
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+/* ***********************************CALL********************************** */
+.wrapper_discount_block {
+    background-image: url(../../img/disc.png);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+    max-height: 822px;
+    /* width: 100%; */
+    padding: 10%;
+    margin-bottom: 100px;
+}
+.discount_block {
+    border: 20px solid #fff;
+    /* max-width: 595px; */
+}
+.inner_discount {
+    color: #fff;
+    padding: 8%;
+}
+.inner_discount h2 {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+.fill {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.agree_desc {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.get_discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input_get_discount {
+    width: 250px;
+    height: 55px;
+    border: 2px solid #fff;
+    color: #CECECE;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 30px;
+    border-radius: 40px;
+    background: transparent
+}
+.input_get_discount:focus {
+    outline: 0;
+    border: 2px solid rgb(116, 116, 116);
+}
+.btn_get_discount {
+    width: 300px;
+    height: 55px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: 0px;
+    background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+    font-weight: 700;
+    font-size: 22px;
+    cursor: pointer;
+}
+.btn_get_discount:hover {
+    background: linear-gradient(89.03deg, #4BAF50 0.38%, #92C64E 99.6%);
+}
+@media (max-width: 1440px) {
+    .input_get_discount {
+        width: 200px;
+        height: 55px;
+        border: 2px solid #fff;
+        color: #CECECE;
+        font-size: 20px;
+        font-weight: 600;
+        padding-left: 30px;
+        border-radius: 40px;
+        background: transparent
+    }
+    .btn_get_discount {
+        width: 280px;
+        height: 55px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1280px) {
+    .input_get_discount {
+        width: 180px;
+        height: 55px;
+        border: 2px solid #fff;
+        color: #CECECE;
+        font-size: 20px;
+        font-weight: 600;
+        padding-left: 30px;
+        border-radius: 40px;
+        background: transparent
+    }
+    .btn_get_discount {
+        width: 240px;
+        height: 55px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1024px) {
+    .certif_header_picture {
+        background-image: url(../../img/price_list.png);
+        background-size: cover;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .certif_header_picture span {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .wrapper_discount_block {
+        background-image: url(../../img/disc.png);
+        background-repeat: no-repeat;
+        background-size: 1440px;
+        max-height: 822px;
+        /* width: 100%; */
+        padding: 8%;
+    }
+    .get_discount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .input_get_discount {
+        width: 80%;
+        height: 55px;
+        border: 2px solid #fff;
+        color: #CECECE;
+        font-size: 20px;
+        font-weight: 600;
+        padding-left: 30px;
+        border-radius: 40px;
+        background: transparent;
+        margin-bottom: 30px;
+    }
+    .btn_get_discount {
+        width: 60%;
+        height: 55px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .fill {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .agree_desc {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .certif_header_picture {
+        background-image: url(../../img/price_list.png);
+        background-size: cover;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .certif_header_picture span {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .wrapper_discount_block {
+        background-image: url(../../img/disc.png);
+        background-repeat: no-repeat;
+        background-size: 1440px;
+        max-height: 822px;
+        /* width: 100%; */
+        padding: 8%;
+    }
+    .discount_block {
+        border: 8px solid #fff;
+        /* max-width: 595px; */
+    }
+    .inner_discount h2 {
+        font-size: 38px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .fill {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .agree_desc {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .get_discount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .input_get_discount {
+        width: 80%;
+        height: 45px;
+        border: 2px solid #fff;
+        color: #CECECE;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 30px;
+        border-radius: 40px;
+        background: transparent;
+        margin-bottom: 30px;
+    }
+    .btn_get_discount {
+        width: 80%;
+        height: 45px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 714px) {
+    .certif_header_picture span {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+}
+@media (max-width: 425px) {
+    .certif_header_picture {
+        background-image: url(../../img/price_list.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .certif_header_picture span {
+        color: #fff;
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .wrapper_discount_block {
+        background-image: url(../../img/disc.png);
+        background-repeat: no-repeat;
+        background-size: 1440px;
+        max-height: 822px;
+        /* width: 100%; */
+        padding: 8%;
+    }
+    .discount_block {
+        border: 8px solid #fff;
+        /* max-width: 595px; */
+    }
+    .inner_discount h2 {
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .fill {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .agree_desc {
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .get_discount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .input_get_discount {
+        width: 80%;
+        height: 45px;
+        border: 2px solid #fff;
+        color: #CECECE;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 30px;
+        border-radius: 40px;
+        background: transparent;
+        margin-bottom: 20px;
+    }
+    .btn_get_discount {
+        width: 80%;
+        height: 45px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+@media (max-width:320px) {
+    .certif_header_picture {
+        background-image: url(../../img/price_list.png);
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .certif_header_picture span {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.055em;
+    }
+    .wrapper_discount_block {
+        background-image: url(../../img/disc.png);
+        background-repeat: no-repeat;
+        background-size: 1440px;
+        max-height: 822px;
+        /* width: 100%; */
+        padding: 8%;
+    }
+    .discount_block {
+        border: 8px solid #fff;
+        /* max-width: 595px; */
+    }
+    .inner_discount h2 {
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .fill {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .agree_desc {
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .btn_get_discount {
+        width: 80%;
+        height: 45px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 0px;
+        background: linear-gradient(89.03deg, #92C64E 0.38%, #4BAF50 99.6%);
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}

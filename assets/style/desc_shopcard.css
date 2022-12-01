@@ -20,3 +20,19 @@
     font-size: 44px;
     font-weight: 600;
 }
+@media (max-width: 1024px) {
+    .wrapper_desc_item {
+        display: flex;
+        flex-direction: column;
+    }
+    .img_shop {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .right_desc_card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+}

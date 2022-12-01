@@ -3,7 +3,7 @@
     justify-content: space-between;
 }
 .left_bar {
-    width: 50%;
+    width: 48%;
 }
 .left_bar h2 {
     font-size: 24px;
@@ -15,7 +15,7 @@
     color: rgb(235, 235, 235);
 }
 .right_bar {
-    width: 50%;
+    width: 48%;
 }
 .right_bar h2 {
     font-size: 24px;

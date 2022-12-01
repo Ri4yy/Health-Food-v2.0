@@ -15,7 +15,7 @@
 }
 .left_bar span {
     font-size: 18px;
-    color: rgb(235, 235, 235);
+    color: #828282;
 }
 .right_bar {
     width: 48%;
@@ -28,7 +28,7 @@
 }
 .right_bar span {
     font-size: 18px;
-    color: rgb(235, 235, 235);
+    color: #828282;
 }
 .payment_list {
     display: flex;
@@ -58,7 +58,7 @@
 .payment_street_input {
     padding-left: 30px;
     height: 60px;
-    color: rgb(235, 235, 235);
+    color: #828282;
     font-size: 16px;
     border-radius: 15px;
     border: 2px solid #c4c4c4;
@@ -67,7 +67,7 @@
 .payment_input {
     padding-left: 30px;
     height: 60px;
-    color: rgb(235, 235, 235);
+    color: #828282;
     font-size: 16px;
     border-radius: 15px;
     border: 2px solid #c4c4c4;

@@ -74,3 +74,18 @@
 .payment_input:hover {
     border: 2px solid #74b445;
 }
+
+
+.data_list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.data_list li {
+    display: flex;
+    flex-direction: column;
+}
+.data_list label {
+    font-size: 18px;
+    font-weight: 600;
+}

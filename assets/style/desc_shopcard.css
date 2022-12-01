@@ -20,6 +20,14 @@
     font-size: 44px;
     font-weight: 600;
 }
+.price_in_desc_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed black;
+    padding-top: 20px;
+    width: 100%;
+}
 @media (max-width: 1024px) {
     .wrapper_desc_item {
         display: flex;

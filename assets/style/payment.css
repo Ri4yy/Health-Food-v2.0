@@ -28,7 +28,7 @@
 }
 .payment_list {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
@@ -40,24 +40,37 @@
     flex-direction: column;
     margin-bottom: 15px;
 }
+.item_street_payment {
+    width: 100%;
+}
+.item_payment {
+    width: 45%;
+}
 .payment_list label {
     font-size: 18px;
     font-weight: 600;
 }
 .payment_street_input {
-    width: 100%;
     padding-left: 30px;
     height: 60px;
     color: rgb(235, 235, 235);
     font-size: 16px;
     border-radius: 15px;
+    border: 2px solid #c4c4c4;
     box-sizing: border-box;
 }
 .payment_input {
-    width: 50%;
     padding-left: 30px;
     height: 60px;
     color: rgb(235, 235, 235);
     font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid #c4c4c4;
     box-sizing: border-box;
+}
+.payment_street_input:hover {
+    border: 2px solid #74b445;
+}
+.payment_input:hover {
+    border: 2px solid #74b445;
 }

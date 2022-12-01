@@ -126,3 +126,16 @@
 .btn_payment:hover {
     background: linear-gradient(89.03deg, #4BAF50 0.38%, #92C64E 99.6%);
 }
+@media (max-width: 1024px) {
+    .payment_list {
+        display: flex;
+        flex-direction: column;
+    }
+    .data_list {
+        display: flex;
+        flex-direction: column;
+    }
+    .item_payment {
+        width: 100%;
+    }
+}

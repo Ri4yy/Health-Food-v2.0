@@ -84,6 +84,7 @@
 .data_list li {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 .data_list label {
     font-size: 18px;

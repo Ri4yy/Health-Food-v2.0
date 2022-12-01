@@ -86,10 +86,8 @@
     border: 2px solid #74b445;
 }
 
-.payment_input::-webkit-input-placeholder {
-    color: rgb(235, 235, 235);
-}
-.payment_input {
+
+.payment_input, .payment_street_input {
   color: black;
 }
 

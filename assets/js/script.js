@@ -335,6 +335,6 @@ $(function () {
     $('.days_choose').on('click', 'li:not(.active)', function() {
         $(this)
             .addClass('active').siblings().removeClass('active')
-            .closest('.right_field').find(tabs).removeClass('active').eq($(this).index()).addClass('active');
+            .closest('.right_field');
         });
 });

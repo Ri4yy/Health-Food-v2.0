@@ -17,7 +17,7 @@
     border-radius: 15px;
 }
 .name_desc_card {
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 600;
 }
 .price_in_desc_card {
@@ -42,5 +42,23 @@
         flex-direction: column;
         width: 100%;
         justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    .name_desc_card {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .compound_item p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 425px) {
+    .name_desc_card {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .compound_item p {
+        font-size: 14px;
     }
 }

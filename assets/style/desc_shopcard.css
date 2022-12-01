@@ -59,6 +59,11 @@
     border-bottom: 1px solid black;
     padding-bottom: 10px;
 }
+@media (max-width: 1440px) {
+    .wrapper_desc_item {
+        margin-top: 40px;
+    }
+}
 @media (max-width: 1024px) {
     .wrapper_desc_item {
         display: flex;

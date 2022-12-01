@@ -79,10 +79,10 @@
 .payment_input:hover {
     border: 2px solid #74b445;
 }
-.payment_street_input:active {
+.payment_street_input:focus {
     border: 2px solid #74b445;
 }
-.payment_input:active {
+.payment_input:focus {
     border: 2px solid #74b445;
 }
 

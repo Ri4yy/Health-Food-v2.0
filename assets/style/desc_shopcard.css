@@ -33,6 +33,7 @@
 }
 .tabs_content_item {
     display: none;
+    margin-bottom: 30px;
 }
 .desc_delivery_list {
     display: flex;

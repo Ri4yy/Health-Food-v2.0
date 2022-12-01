@@ -33,6 +33,10 @@
     font-weight: 600;
     color: #BCBCBC;
 }
+.breadcrumbs li:nth-child(5) {
+    font-weight: 600;
+    color: #BCBCBC;
+}
 .breadcrumbs a {
     text-decoration: none;
     color: black;
@@ -81,7 +85,11 @@
 .payment_delivery {
     margin-bottom: 100px;
 }
-
+@media (max-width: 1440px) {
+    .breadcrumbs {
+        display: none;
+    }
+}
 @media (max-width: 1024px) {
     .delivery_header_picture {
         background-image: url(../../img/deliveryheader.png);
@@ -98,7 +106,7 @@
         font-weight: 800;
         letter-spacing: 0.055em;
     }
-    .breadcrumbs {
+    /* .breadcrumbs {
         margin: 0;
         padding: 0;
         display: flex;
@@ -109,7 +117,7 @@
         font-size: 14px;
         font-weight: 600;
         list-style: none;
-    }
+    } */
     .delivery_pay_list {
         display: flex;
         flex-direction: row;

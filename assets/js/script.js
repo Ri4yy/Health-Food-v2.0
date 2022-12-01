@@ -331,10 +331,5 @@ $(function() {
     });
 });
 
-$(function () {
-    $('.days_choose').on('click', 'li:not(.active)', function() {
-        $(this)
-            .addClass('active').siblings().removeClass('active')
-            .closest('.right_field');
-        });
-});
+// Описание товара
+filter_quest('.desc_delivery_list', '.main_content', '.tabs_content_item');

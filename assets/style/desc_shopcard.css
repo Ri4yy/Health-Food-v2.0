@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px dashed black;
+    border-top: 1px dashed #c4c4c4;
     padding-top: 20px;
     width: 100%;
 }

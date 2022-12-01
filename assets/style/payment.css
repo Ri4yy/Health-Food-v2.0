@@ -7,6 +7,8 @@
 }
 .left_bar h2 {
     font-size: 24px;
+    padding: 0;
+    margin: 0;
 }
 .left_bar span {
     font-size: 18px;
@@ -17,6 +19,8 @@
 }
 .right_bar h2 {
     font-size: 24px;
+    padding: 0;
+    margin: 0;
 }
 .right_bar span {
     font-size: 18px;
@@ -34,6 +38,7 @@
 .payment_list li {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 .payment_list label {
     font-size: 18px;
@@ -44,10 +49,15 @@
     padding-left: 30px;
     height: 60px;
     color: rgb(235, 235, 235);
+    font-size: 16px;
+    border-radius: 15px;
+    box-sizing: border-box;
 }
 .payment_input {
     width: 50%;
     padding-left: 30px;
     height: 60px;
     color: rgb(235, 235, 235);
+    font-size: 16px;
+    box-sizing: border-box;
 }

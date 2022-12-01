@@ -86,6 +86,12 @@
     border: 2px solid #74b445;
 }
 
+.payment_input::-webkit-input-placeholder {
+    color: rgb(235, 235, 235);
+}
+.payment_input {
+  color: black;
+}
 
 .data_list {
     display: flex;

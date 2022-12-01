@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
+    justify-content: space-between;
 }
 .bottom_desc_card {
     display: flex;
@@ -13,4 +14,9 @@
 }
 .img_shop {
     width: 55%;
+    border-radius: 15px;
+}
+.name_desc_card {
+    font-size: 44px;
+    font-weight: 600;
 }

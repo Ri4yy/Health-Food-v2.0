@@ -28,6 +28,13 @@
     padding-top: 20px;
     width: 100%;
 }
+.tabs_content_item.active{
+    display: block;
+}
+
+.tabs_content_item {
+    display: none;
+}
 @media (max-width: 1024px) {
     .wrapper_desc_item {
         display: flex;

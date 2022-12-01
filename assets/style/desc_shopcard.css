@@ -1,0 +1,14 @@
+.wrapper_desc_item {
+    display: flex;
+    justify-content: space-between;
+}
+.right_desc_card {
+    width: 40%;
+}
+.bottom_desc_card {
+    display: flex;
+    flex-direction: column;
+}
+.img_shop {
+    width: 55%;
+}

@@ -1,0 +1,53 @@
+.wrapper_payment {
+    display: flex;
+    justify-content: space-between;
+}
+.left_bar {
+    width: 50%;
+}
+.left_bar h2 {
+    font-size: 24px;
+}
+.left_bar span {
+    font-size: 18px;
+    color: rgb(235, 235, 235);
+}
+.right_bar {
+    width: 50%;
+}
+.right_bar h2 {
+    font-size: 24px;
+}
+.right_bar span {
+    font-size: 18px;
+    color: rgb(235, 235, 235);
+}
+.payment_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.payment_list li {
+    display: flex;
+    flex-direction: column;
+}
+.payment_list label {
+    font-size: 18px;
+    font-weight: 600;
+}
+.payment_street_input {
+    width: 100%;
+    padding-left: 30px;
+    height: 60px;
+    color: rgb(235, 235, 235);
+}
+.payment_input {
+    width: 50%;
+    padding-left: 30px;
+    height: 60px;
+    color: rgb(235, 235, 235);
+}

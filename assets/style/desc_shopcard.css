@@ -3,6 +3,8 @@
     justify-content: space-between;
 }
 .right_desc_card {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 .bottom_desc_card {

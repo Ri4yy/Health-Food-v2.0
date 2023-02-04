@@ -119,12 +119,15 @@ function filter(list, card) {
 filter('.filter_list', '.card_diet');
 filter('.shop_filter_list', '.shop_card');
 
-// ТАБЫ ОПЛАТЫ И ДОСТАВКИ
+// ПРОФИЛЬ
 $(function() {
     if ($(window).width() > 1024) {
         $('.profile_list').hide();
     } else {
         $('.left_profile_window').hide();
+        $('.top_profile_list').find('li').on('click', () => {
+            $('.left_profile_window').hide('slow');
+        });
     }
     $('.profile_list').on('click', () => {
         $('.left_profile_window').slideToggle();
@@ -137,18 +140,19 @@ $(function() {
         e.preventDefault();
         const countInput = $(e.target).parent().find('.input_count');
         let counter = countInput.val();
+        
         if (counter < 99) {
             counter++;
             countInput.val(counter);
             const parentSum = $(e.target).parent().parent().find('span');
             $(parentSum).html($(parentSum).attr('id') * countInput.val() + ' руб.');
 
-            let curPrice = parseInt(parentSum.html().match(/\d+/));
-            let cart = {
-                product: curPrice
-            };
+            // let curPrice = parseInt(parentSum.html().match(/\d+/));
+            // let cart = {
+            //     product: curPrice
+            // };
             
-            $('.enter_price').html(cart.product + ' руб.');
+            // $('.enter_price').html(cart.product + ' руб.');
         }
     });
 
@@ -162,10 +166,10 @@ $(function() {
             const parentSum = $(e.target).parent().parent().find('span');
             $(parentSum).html($(parentSum).attr('id') * countInput.val() + ' руб.');
 
-            let cart = {
-                product: parseInt(parentSum.html().match(/\d+/))
-            };
-            $('.enter_price').html(cart.product + ' руб.');
+            // let cart = {
+            //     product: parseInt(parentSum.html().match(/\d+/))
+            // };
+            // $('.enter_price').html(cart.product + ' руб.');
         }
     });
 
@@ -174,12 +178,6 @@ $(function() {
             const countInput = $(e.target).parent().find('.input_count');
             const parentSum = $(e.target).parent().parent().find('span');
             $(parentSum).html($(parentSum).attr('id') * countInput.val() + ' руб.');
-    });
-
-    $('.delete').on('click', (e) => {
-        e.preventDefault();
-        const deleteElem = $(e.target).parent().find('.delete');
-        $(e.target).closest('.item_cart').remove();
     });
 });
 
@@ -314,6 +312,7 @@ $(function() {
 });
 });
 
+// ANCHOR-SCROLL
 $(function() {
     $('.button_try').on('click', function(e){
         $('html,body').stop().animate({ scrollTop: $('#how_scroll').offset().top }, 1000);
@@ -321,12 +320,126 @@ $(function() {
       });
 });
 
+// ANIMATION
 $(function() {
     new WOW().init();
 });
 
+// PRELOADER
 $(function() {
     $(window).on('load', function () {
         $('.preloader').fadeOut().end().delay(50).fadeOut('slow');
     });
+});
+
+// HIDE/SHOW PASSWORD
+$(function() {
+    let eyes = document.querySelectorAll('span.fi-rr-eye'),
+        password_input = document.querySelectorAll('.password input');
+    
+    let i = 0;
+    eyes.forEach(eye => {
+        eye.onclick = () => {
+        if(i == 0) {
+            password_input.forEach(pi => {
+                pi.type = "text";
+                eye.classList.replace('fi-rr-eye', 'fi-rr-eye-crossed');
+                i = 1;
+            });
+            
+        } else {
+            password_input.forEach(pi => {
+                pi.type = "password";
+                eye.classList.replace('fi-rr-eye-crossed', 'fi-rr-eye');
+                i = 0;
+            });
+        }
+    };
+    });
+
+    // $('.submit').click((e)=> {
+    //     e.preventDefault();
+    //         $(e.target).parent().find('input').each((i, input) => {
+
+    //     if ($(input).val() == "") {
+    //         $(e.target).parent().find('.alert').text('Заполните поля');
+    //         $(input).css('border-color', '#f3062dce');
+    //     } else {
+    //         $(input).css('border-color', '#efefef');
+    //         $('.alert').text('');
+    //         if ($(e.target).parent().find('.box').find('input').val().length < 5) {
+    //             $(e.target).parent().find('.psw').text('Пароль слишком короткий');
+    //             $(e.target).parent().find('.box').find('input').css('border-color', '#f3062dce');
+    //         } else {
+    //             $(e.target).parent().find('.box').find('input').css('border-color', '#efefef');
+    //             $(e.target).parent().find('.psw').text('');
+    //         }
+    //     }
+    //     });
+    // });
+
+    $('.form_signUp').hide();
+
+    $('.si').on('click', () => {
+        $('.form_signUp').show();
+        $('.form_signIn').hide();
+        $('.heading').text('Регистрация');
+    });
+    $('.su').on('click', () => {
+        $('.form_signUp').hide();
+        $('.form_signIn').show();
+        $('.heading').text('Войти');
+    });
+});
+
+// Описание товара
+filter_quest('.desc_delivery_list', '.main_content', '.tabs_content_item');
+
+// 
+
+$(function() {
+    $('.days_choose').on('click', (e) => {
+        if($(e.target).attr('class') != 'days_choose') {
+            $('.days').each((i,item) => {
+                $(item).on('click', (e) => {
+                    $('.days_choose').find('.days_active').removeClass('days_active');
+                    $(item).addClass('days_active');
+                    let price = $(item).data('card-price');
+                    let day = $(item).data('card-day');
+                    $('.pay_day').html(day);
+                    $('.pay_price').html(price * day);
+                });
+            });
+        }
+    });
+});
+
+//
+
+$(function() {
+    $('.admin_tabs li').hover(function(){
+        if(!$(this).hasClass('list_hover')) {
+            $(this).css({
+                "background-color": "#fff",
+                "padding": "10px 20px",
+                "border-top-left-radius": "25px",
+                "border-bottom-left-radius": "25px",
+                "transition": "all .3s ease"
+            });
+            $(this).find('a').css('color','rgb(89, 233, 113)');
+        }
+    }, function(){
+        $(this).css({
+            "background-color": "", 
+            "padding": "",
+            "border-top-left-radius": "",
+            "border-bottom-left-radius": "",
+            "transition": "all .3s ease"
+        });
+        $(this).find('a').css('color','');
+        if($(this).hasClass('list_hover')) {
+            $(this).find('a').css('color','rgb(89, 233, 113)');
+        }
+    }
+);  
 });

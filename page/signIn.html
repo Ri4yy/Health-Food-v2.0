@@ -61,66 +61,63 @@
             </div>
         </div>
     </header>
+    
+    <div class="wrapper">
+        <div class="form">
+            <h3 class="heading">Войти</h3>
 
-    <div class="wrapper_sign">
-        <div class="container">
-            <div class="toggle_box">
-                <span id="toggle_btn"></span>
-
-                <div class="btn_choose_field active_sign" id="signIn-btn">
-                    <i class="far fa-user"></i>
-                    <p>Вход</p>
+            <form action="" class="form_signIn">
+                <div class="name">
+                    <label for="">Логин</label>
+                    <input type="text" placeholder="Ваш логин">
                 </div>
 
-                <div class="btn_choose_field" id="signUp-btn">
-                    <i class="far fa-user"></i>
-                    <p>Регистрация</p>
+                <div class="password">
+                    <label for="">Пароль</label>
+                    <div class="box">
+                        <input type="password" placeholder="Ваш пароль">
+                        <span class="fi fi-rr-eye"></span>
+                    </div>
+                </div>
+                <p class="alert"></p>
+                <p class="psw"></p>
+                <button class="submit" type="submit">Войти</button>
+            </form>
+
+            <form action="" class="form_signUp">
+                <div class="name">
+                    <label for="">Логин</label>
+                    <input type="text" placeholder="Ваш логин">
                 </div>
 
-                <form action="#" class="form" id="signIn-form">
-                    <div class="input_box">
-                        <img src="../img/user-r.png" alt=""><input type="text" placeholder="Введите имя"
-                            class="input_user">
-                    </div>
-                    <div class="input_box">
-                        <img src="../img/padlock.png" alt=""><input type="email" placeholder="Введите пароль"
-                            class="input_user">
-                    </div>
+                <div class="email">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Ваш email">
+                </div>
 
-                    <div class="check_block">
-                        <div class="check_top">
-                            <input type="checkbox" class="input_check"><label for="">Запомнить меня</label>
-                        </div>
-                        <a href="#">Забыли пароль?</a>
+                <div class="password">
+                    <label for="">Пароль</label>
+                    <div class="box">
+                        <input type="password" placeholder="Ваш пароль">
+                        <span class="fi fi-rr-eye"></span>
                     </div>
-                    <button class="btn_user_enter">Войти</button>
-                    <div class="account">
-                        <p>Нет аккаунта?</p><a href="#">Зарегистрироваться</a>
-                    </div>
-                </form>
+                </div>
+                <p class="alert"></p>
+                <p class="psw"></p>
+                <button class="submit" type="submit">Регистрация</button>
+            </form>
+        </div>
 
-                <form action="#" class="form" id="signUp-form">
-                    <div class="input_box">
-                        <img src="../img/user-r.png" alt=""><input type="text" placeholder="Введите имя"
-                            class="input_user">
-                    </div>
-                    <div class="input_box">
-                        <img src="../img/mail-r.png" alt=""><input type="email" placeholder="Введите e-mail"
-                            class="input_user">
-                    </div>
-                    <div class="input_box">
-                        <img src="../img/padlock.png" alt=""><input type="password" placeholder="Введите пароль"
-                            class="input_user">
-                    </div>
-                    <div class="check_block">
-                        <div class="check_top">
-                            <input type="checkbox" class="input_check"><label for="">Принять условия</label>
-                        </div>
-                    </div>
-                    <button class="btn_user_enter">Регистрация</button>
-                </form>
+        <div class="buttons">
+            <button class="sign_up_btn si">
+                <span class="fi fi-rr-user-add"></span>
+                <span class="text">Регистрация</span>
+            </button>
 
-            </div>
+            <button class="sign_up_btn su">
+                <span class="fi fi-rr-enter"></span>
+                <span class="text">Войти</span>
+            </button>
         </div>
     </div>
 
@@ -142,9 +139,8 @@
         </div>
     </footer>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../assets/js/script.js"></script>
 </body>
 
 </html>

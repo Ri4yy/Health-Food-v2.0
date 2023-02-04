@@ -330,3 +330,79 @@ $(function() {
         $('.preloader').fadeOut().end().delay(50).fadeOut('slow');
     });
 });
+
+$(function() {
+    let eyes = document.querySelectorAll('span.fi-rr-eye'),
+        password_input = document.querySelectorAll('.password input');
+    
+    let i = 0;
+    eyes.forEach(eye => {
+        eye.onclick = () => {
+        if(i == 0) {
+            password_input.forEach(pi => {
+                pi.type = "text";
+                eye.classList.replace('fi-rr-eye', 'fi-rr-eye-crossed');
+                i = 1;
+            });
+            
+        } else {
+            password_input.forEach(pi => {
+                pi.type = "password";
+                eye.classList.replace('fi-rr-eye-crossed', 'fi-rr-eye');
+                i = 0;
+            });
+        }
+    };
+    });
+
+    $('.submit').click((e)=> {
+        e.preventDefault();
+            $(e.target).parent().find('input').each((i, input) => {
+
+        if ($(input).val() == "") {
+            $(e.target).parent().find('.alert').text('Заполните поля');
+            $(input).css('border-color', '#f3062dce');
+        } else {
+            $(input).css('border-color', '#efefef');
+            $('.alert').text('');
+            if ($(e.target).parent().find('.box').find('input').val().length < 5) {
+                $(e.target).parent().find('.psw').text('Пароль слишком короткий');
+                $(e.target).parent().find('.box').find('input').css('border-color', '#f3062dce');
+            } else {
+                $(e.target).parent().find('.box').find('input').css('border-color', '#efefef');
+                $(e.target).parent().find('.psw').text('');
+            }
+        }
+        });
+    });
+
+    $('.form_signUp').hide();
+
+    $('.si').on('click', () => {
+        $('.form_signUp').show();
+        $('.form_signIn').hide();
+        $('.heading').text('Регистрация');
+    });
+    $('.su').on('click', () => {
+        $('.form_signUp').hide();
+        $('.form_signIn').show();
+        $('.heading').text('Войти');
+    });
+});
+
+$(function() {
+    $('.days_choose').on('click', (e) => {
+        if($(e.target).attr('class') != 'days_choose') {
+            $('.days').each((i,item) => {
+                $(item).on('click', (e) => {
+                    $('.days_choose').find('.days_active').removeClass('days_active');
+                    $(item).addClass('days_active');
+                    let price = $(item).data('card-price');
+                    let day = $(item).data('card-day');
+                    $('.pay_day').html(day);
+                    $('.pay_price').html(price * day);
+                });
+            });
+        }
+    });
+});

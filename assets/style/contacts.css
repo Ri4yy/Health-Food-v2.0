@@ -25,6 +25,7 @@
     text-transform: uppercase;
     color: black;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 .contacts_list li {
     display: flex;

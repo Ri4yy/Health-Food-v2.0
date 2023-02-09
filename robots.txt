@@ -5,4 +5,4 @@ Disallow: /page/cart.html
 Disallow: /page/admin.html
 Disallow: /page/profile.html
 Allow: /
-Sitemap: http://localhost/HealthFood-php/sitemap.xml
+Sitemap: https://ri4yy.github.io/Health-Food-v2.0/sitemap.xml

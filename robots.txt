@@ -3,6 +3,6 @@ Disallow: /include/
 Disallow: /layout/
 Disallow: /page/cart.html
 Disallow: /page/admin.html
-Disallow: /page/signIn.html
-Allow: /page/
+Disallow: /page/profile.html
+Allow: /
 Sitemap: http://localhost/HealthFood-php/sitemap.xml

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /include/
+Disallow: /layout/
+Disallow: /page/cart.html
+Disallow: /page/admin.html
+Disallow: /page/signIn.html
+Allow: /page/
+Sitemap: http://localhost/HealthFood-php/sitemap.xml

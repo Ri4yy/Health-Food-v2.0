@@ -1,53 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost/HealthFood-php/</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/</loc>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/about.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/about.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/rations.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/rations.html</loc>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/shop.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/shop.html</loc>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/certificates.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/certificates.html</loc>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/discount.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/discount.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/delivery.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/delivery.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/price.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/price.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/contacts.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/contacts.html</loc>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>http://localhost/HealthFood-php/page/desc_card.html</loc>
-    <lastmod></lastmod>
+    <loc>https://ri4yy.github.io/Health-Food-v2.0/page/desc_card.html</loc>
     <priority>0.30</priority>
   </url>
 </urlset>

@@ -74,9 +74,6 @@ $(document).ready(function(){
         320:{
             items:1
         },
-        586:{
-            items:2
-        },
     }
     })
 });

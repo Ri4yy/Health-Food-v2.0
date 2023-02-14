@@ -2987,11 +2987,11 @@ body {
         font-size: 12px;
     }
 } 
-@media (max-width: 586px) {
+/* @media (max-width: 586px) {
     .how_list {
         display: none;
     }
-}
+} */
 @media (max-width: 425px) {
     .modal-dialog {
         max-width: 500px;
@@ -3067,9 +3067,9 @@ body {
         font-weight: 600;
         text-align: center;
     }
-    /* .how_list {
+    .how_list {
         display: none;
-    } */
+    }
     .how_wrapper h2 {
         margin-bottom: 40px;
         font-size: 22px;
@@ -3431,9 +3431,9 @@ body {
         font-weight: 600;
         text-align: center;
     }
-    .how_list {
+    /* .how_list {
         display: none;
-    }
+    } */
     .how_wrapper h2 {
         margin-bottom: 40px;
         font-size: 18px;
